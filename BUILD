@@ -11,5 +11,6 @@ cc_binary(
     deps = [ 
 	    "//template:partial",
         "//const:const",
+        "//friend_function:friend",
     ],
 )
