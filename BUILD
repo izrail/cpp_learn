@@ -12,5 +12,6 @@ cc_binary(
 	    "//template:partial",
         "//const:const",
         "//friend_function:friend",
+	    "//complex:complex",
     ],
 )

@@ -19,17 +19,18 @@ member fun total time is 215.218
 */
 void test_friend_function() {
     A a(1);
+    int total = 0;
     auto begin = std::chrono::high_resolution_clock::now();
-    for(int i = 0; i < 100000; i++) {
-        fun(a);
+    for(int i = 0; i < 10000000; i++) {
+        total += fun(a);
     }
     auto end = std::chrono::high_resolution_clock::now();
     auto result = std::chrono::duration_cast<std::chrono::nanoseconds>(end - begin);
     cout << "friend fun total time is " << result.count() * 1e-3 << endl;
-    
+   total = 0; 
     auto begin1 = std::chrono::high_resolution_clock::now();
-    for(int i = 0; i < 100000; i++) {
-        a.getA();
+    for(int i = 0; i < 10000000; i++) {
+        total += a.getA();
     }
     auto end1 = std::chrono::high_resolution_clock::now();
     auto result1 = std::chrono::duration_cast<std::chrono::nanoseconds>(end1 - begin1);
