@@ -8,15 +8,15 @@ public:
 	void operator = (Complex& complex);
 	void operator = (Complex&& complex);
 
-	template<typename T>
-	void print(const T &t) {
-		std::cout << t << std::endl;
-	}
-	template<typename T, typename... Args>
-	void print(const T &t, const Args&... args) {
-		std::cout << t << "," << std::endl;
-		print(args...);
-	}
+	// template<typename T>
+	// void print(const T &t) {
+	// 	std::cout << t << std::endl;
+	// }
+	// template<typename T, typename... Args>
+	// void print(const T &t, const Args&... args) {
+	// 	std::cout << t << "," << std::endl;
+	// 	print(args...);
+	// }
 	float getRe() const {
 	return a_;
 	}
