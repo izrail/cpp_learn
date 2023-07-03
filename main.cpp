@@ -6,7 +6,7 @@
 using namespace std;
 
 int main() {
-    cout << << endl << "-------------------test start.------------------" << endl;
+    cout << endl << "-------------------test start.------------------" << endl;
     test_const();
     test_full_specialization();
     test_friend_function();
