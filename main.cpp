@@ -6,7 +6,8 @@
 using namespace std;
 
 int main() {
-    cout << endl << endl << "-------------------test------------------" << endl;
+    cout << endl << "----------------------------------test start.---------------------------------" << endl;
+
     test_const();
     test_full_specialization();
     test_friend_function();
@@ -19,6 +20,7 @@ int main() {
     Complex e = std::move(a);
     d = a;
     e = std::move(a);
+    cout << "func name:" << __func__ <<endl;
     return 0;
 
 }

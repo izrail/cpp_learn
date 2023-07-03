@@ -69,6 +69,7 @@ int& fun(int& t) {
 */
 
 void test_const() {
+    cout << "test const start." << endl;
      int num = 3;
     const int* const_value = &num;
     cout << "the value is " << *const_value << " before change const_value." << endl;
@@ -80,4 +81,5 @@ void test_const() {
     int t = 4;
     fun(t) = 5;
     cout << "t is " << t << endl;
+    cout << "test const end." << endl;
 }
