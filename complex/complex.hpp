@@ -7,16 +7,10 @@ public:
 	Complex(Complex&& complex);
 	void operator = (Complex& complex);
 	void operator = (Complex&& complex);
-
-	// template<typename T>
-	// void print(const T &t) {
-	// 	std::cout << t << std::endl;
-	// }
-	// template<typename T, typename... Args>
-	// void print(const T &t, const Args&... args) {
-	// 	std::cout << t << "," << std::endl;
-	// 	print(args...);
-	// }
+	Complex operator + (Complex& complex);
+	Complex operator - (Complex& complex);
+	Complex operator * (Complex& complex);
+	Complex operator / (Complex& complex);
 	float getRe() const {
 	return a_;
 	}

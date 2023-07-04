@@ -29,3 +29,19 @@ void Complex::operator =(Complex&& complex) {
 	this->a_ = complex.getRe();
 	this->b_ = complex.getIm();
 }
+
+Complex Complex::operator +(Complex& complex) {
+	return Complex(complex.getRe() + this->a_, complex.getIm() + this->b_);
+}
+
+Complex Complex::operator -(Complex& complex) {
+	return Complex( this->a_ - complex.getRe(), this->b_ - complex.getIm());
+}
+
+Complex Complex::operator *(Complex& complex) {
+	return Complex( this->a_ * complex.getRe(), this->b_ * complex.getIm());
+}
+
+Complex Complex::operator /(Complex& complex) {
+	return Complex( this->a_ / complex.getRe(), this->b_ / complex.getIm());
+}

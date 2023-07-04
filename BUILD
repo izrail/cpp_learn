@@ -13,5 +13,6 @@ cc_binary(
         "//const:const",
         "//friend_function:friend",
 	    "//complex:complex",
+        "//conv2d:conv2d",
     ],
 )
